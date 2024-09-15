@@ -59,6 +59,7 @@ img {
     width: 100%;
     max-width: 500px;
     margin: 10px 0;
+    
 }
 
 .container {
@@ -104,4 +105,33 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Ensure the body takes up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use Flexbox to layout the page */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the content expand, pushing the footer down */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
 }
