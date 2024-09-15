@@ -126,7 +126,6 @@ html, body {
     flex: 1;
 }
 
-/* Footer styles */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -134,4 +133,5 @@ footer {
     padding: 10px 0;
     width: 100%;
     position: relative;
+    bottom: 0;
 }
